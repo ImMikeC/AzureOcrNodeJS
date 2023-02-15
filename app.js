@@ -7,26 +7,27 @@ const endpoint = "https://cs-hs-techlabs-dev-001.cognitiveservices.azure.com/";
 const credentials = new CognitiveServicesCredentials(subscriptionKey);
 const client = new ComputerVisionClient(credentials, endpoint);
 
+var fs = require("fs");
 const express = require("express");
-const bodyParser = require("body-parser");
-
 const app = express();
 const port = 3000;
 
-app.use(bodyParser);
-//app.use(express.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
 
-app.post("/ocr", async (req, res) => {
-  const { imageUrl } = req.body.imageUrl;
+app.post('/ocr', async (req, res) => {
+
+  const image = req.body.imageUrl;
 
   try {
-    console.log(imageUrl)
-    const result = await client.recognizePrintedText(false, { url: imageUrl });
-    const recognizedText = result.lines.map((line) => line.text).join("\n");
-    res.json( {recognizedText} );
+    const result = await client.recognizePrintedText(false, image);
+    //const text = result.lines(line => line.text).join('\n')
+    res.json(result);
+    fs.writeFileSync('archivo.json', JSON.stringify(result))
+    console.table(result);
   } catch (error) {
-    console.log(error);
-    res.status(500).send("Error recognizing text");
+    console.error(error);
+    res.status(500).json({ message: 'No se pudo reconocer texto en imagen.' });
   }
 });
 

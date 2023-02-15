@@ -1,0 +1,91 @@
+{
+    "language": "en",
+    "textAngle": 0,
+    "orientation": "NotDetected",
+    "regions": [
+        {
+            "boundingBox": "611,37,439,222",
+            "lines": [
+                {
+                    "boundingBox": "728,37,205,109",
+                    "words": [
+                        {
+                            "boundingBox": "728,37,205,109",
+                            "text": "RC2"
+                        }
+                    ]
+                },
+                {
+                    "boundingBox": "611,192,439,37",
+                    "words": [
+                        {
+                            "boundingBox": "611,192,83,37",
+                            "text": "RISK"
+                        },
+                        {
+                            "boundingBox": "707,192,189,37",
+                            "text": "COMMAND"
+                        },
+                        {
+                            "boundingBox": "910,192,140,37",
+                            "text": "CENTER"
+                        }
+                    ]
+                },
+                {
+                    "boundingBox": "748,243,166,16",
+                    "words": [
+                        {
+                            "boundingBox": "748,244,52,11",
+                            "text": "Gestiön"
+                        },
+                        {
+                            "boundingBox": "806,243,18,12",
+                            "text": "de"
+                        },
+                        {
+                            "boundingBox": "830,244,54,15",
+                            "text": "Qiesgos"
+                        },
+                        {
+                            "boundingBox": "890,244,24,15",
+                            "text": "Agil"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "boundingBox": "22,700,259,114",
+            "lines": [
+                {
+                    "boundingBox": "92,700,120,65",
+                    "words": [
+                        {
+                            "boundingBox": "92,700,120,65",
+                            "text": "RC2"
+                        }
+                    ]
+                },
+                {
+                    "boundingBox": "22,791,259,23",
+                    "words": [
+                        {
+                            "boundingBox": "22,791,49,23",
+                            "text": "RISK"
+                        },
+                        {
+                            "boundingBox": "79,791,112,23",
+                            "text": "COMMAND"
+                        },
+                        {
+                            "boundingBox": "198,791,83,23",
+                            "text": "CENTER"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "modelVersion": "2021-04-01"
+}
