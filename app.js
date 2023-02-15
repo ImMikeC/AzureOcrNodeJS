@@ -21,10 +21,10 @@ app.post('/ocr', async (req, res) => {
 
   try {
     const result = await client.recognizePrintedText(false, image);
+    // const result = await client.describeImage(image);
     //const text = result.lines(line => line.text).join('\n')
     res.json(result);
-    fs.writeFileSync('archivo.json', JSON.stringify(result))
-    console.table(result);
+    //fs.writeFileSync('textANDbbox.json', JSON.stringify(result))
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'No se pudo reconocer texto en imagen.' });

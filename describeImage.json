@@ -10,14 +10,15 @@
     ],
     "captions": [
         {
-            "text": "a white coffee cup",
-            "confidence": 0.47837311029434204
+            "imagen": "bg-30.jpeg",
+            "text": "a white coffee mug",
+            "confidence": 0.4900359809398651 
         }
     ],
-    "requestId": "bc0196d2-41d7-4911-8e69-682f6c0453c3",
+    "requestId": "daa149c4-0d35-48e0-8ea6-f3f5dc38e8d1",
     "metadata": {
-        "width": 270,
-        "height": 270,
+        "width": 324,
+        "height": 324,
         "format": "Jpeg"
     },
     "modelVersion": "2021-05-01"
